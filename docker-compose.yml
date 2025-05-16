@@ -1,8 +1,14 @@
 version: '3.8'
 
 services:
-  service-name:
-    image: ghcr.io/e4-docker/image-name:latest
+  actions-runner:
+    image: ghcr.io/e4-docker/github-self-hosted-runner:latest
     environment:
-      - TZ
+      - GITHUB_ORGANIZATION
+    secrets:
+      - actions_runner_token
     restart: unless-stopped
+
+secrets:
+  actions_runner_token:
+    external: true

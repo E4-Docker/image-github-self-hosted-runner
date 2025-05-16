@@ -1,3 +1,3 @@
-# Template Docker Image
+# GitHub Self-hosted Runner Image
 
-도커 이미지 전용 저장소 템플릿
+GitHub Self-hosted Runner 설치를 위한 도커 이미지
